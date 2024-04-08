@@ -10,8 +10,6 @@ int main(){
     int eggNeed = 1;
     int milkNeed = 200;
     int flourNeed = 200;
-    //bool ingredients = false;
-    //bool blin = false;
     
     //getting amounts
     printf("How many egg?\n");
@@ -51,30 +49,5 @@ int main(){
     }
 
     printf("you have %d portion of palatschinek", smallest);
-
-
-
-        /*else if(egg < eggNeed){
-            printf("you don't have enough eggs\n");
-        }
-    if(milk > milkNeed){
-        printf("you have enough milk, \n");
-    }
-        else if(milk < milkNeed){
-            printf("you don't have enough milk\n");
-        }
-    if(flour > flourNeed){
-        printf("you have enough flour, \n");
-    }
-        else if(flour < flourNeed){
-            printf("you don't have enough flour\n");
-        }
-    else{
-        //blin = true;
-        printf("you don't have enough ingredients, try again or leave\n");
-    }*/
-     
-
-    
 
 } 

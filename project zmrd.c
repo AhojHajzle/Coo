@@ -3,6 +3,7 @@
 
 //not working correctly chill
 //hleda jestli cislo je nebo neni delitelne (prvocislo)
+//TO DO poupravit komentz
 #define cisloAno 0
 int main(){
 
@@ -38,6 +39,7 @@ int main(){
             finishec = true; //nalezena delitelnost, koncime loop
         }
         finisher = finisher + step;
+        cislo = cisloOrig;        //nove pridane, vyresilo vsechno, nyni funguje
     }
 
     

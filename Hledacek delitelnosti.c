@@ -6,7 +6,7 @@
 //TO DO poupravit komentz
 #define cisloAno 0
 int main(){
-
+    //zjistujeme jestli uzivatel chce hledat vsechny nebo jenom prvni delitel
     int setter;
     printf("Choose your mode (0 for first, 1 for every)  ");
     scanf("%d", &setter);
@@ -31,7 +31,7 @@ int main(){
     
     //main code (bro fr programuje ve dvou jazycich najednou)
     //pridat goto statement, vratit se z if do while, (nee dement)
-    //udelat se swtichem by bylo asi vic cool ngl
+    //udelat se swtichem by bylo asi vic cool ngl (ukol na zitra)
     //druha verze, nachazi pouze delitele, nedelitele ignoruje, netiskne
     if(setter == 0){
         printf("%d = %d cislo -1\n\n", finish, cislo); //jenom test jestli se da takhle pocitat odpoved ano da**
@@ -48,14 +48,14 @@ int main(){
     }
     else if(setter == 1){
         printf("%d = %d cislo -1\n\n", finish, cislo); //jenom test jestli se da takhle pocitat odpoved ano da**
-    while(cisloOrig > finisher && finisher <= finish && finishec == false){ //2. sem, loopec (loopec, to by asi se melo vratit ne??)*
-        cislo = cislo % finisher;       //finisher se nepricita/neopakuje, porad deli nulou :( (chyba, finisher pricital ale cislo se neresetovalo tudiz najednou aha)
+    while(cisloOrig > finisher && finisher <= finish && finishec == false){ 
+        cislo = cislo % finisher;       
         if(cislo == cisloAno){                                         
             printf("delitelne cislem %d\n\n", finisher, cislo);
             //hledame dalsi delitelnosti nekoncime loop prehozenim finishec z false na true. hledame dalsi delitele a pritom tiskneme nedelitele
         }
         finisher = finisher + step;
-        cislo = cisloOrig; //nove pridane, vyresilo vsechno, nyni funguje
+        cislo = cisloOrig; 
     }
     }
     else{
@@ -63,6 +63,7 @@ int main(){
     }
     
     //prvni verze, nasla vsechny delitele I nedelitele, vsechny vytiskla
+    //vsechny komentare ponechany jako zastrasujici pripad
     /*printf("%d = %d cislo -1\n\n", finish, cislo); //jenom test jestli se da takhle pocitat odpoved ano da**
     while(cisloOrig > finisher && finisher <= finish && finishec == false){ //2. sem, loopec (loopec, to by asi se melo vratit ne??)*
         cislo = cislo % finisher;       //finisher se nepricita/neopakuje, porad deli nulou :( (chyba, finisher pricital ale cislo se neresetovalo tudiz najednou aha)

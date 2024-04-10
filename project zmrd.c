@@ -32,7 +32,7 @@ int main(){
         if(cislo != cisloAno){                                              //odsud 
             printf("nedelitene (zbytek %d)\n", cislo);
         }
-        else if(cislo == cisloAno){                                         //pripadne odsud
+        else if(cislo == cisloAno){                                         //pripadne odsud (lmao dement koncime loop)
             printf("%d delitelne", cislo);
             finishec = true; //nalezena delitelnost, koncime loop
         }

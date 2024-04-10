@@ -2,6 +2,7 @@
 #include <stdbool.h>
 
 //not working correctly chill
+//hleda jestli cislo je nebo neni delitelne (prvocislo)
 #define cisloAno 0
 int main(){
 

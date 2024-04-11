@@ -51,7 +51,7 @@ int main(){
     while(cisloOrig > finisher && finisher <= finish && finishec == false){ 
         cislo = cislo % finisher;       
         if(cislo == cisloAno){                                         
-            printf("delitelne cislem %d\n\n", finisher, cislo);
+            printf("delitelne cislem %d\n\n", finisher);
             //hledame dalsi delitelnosti nekoncime loop prehozenim finishec z false na true. hledame dalsi delitele a pritom tiskneme nedelitele
         }
         finisher = finisher + step;

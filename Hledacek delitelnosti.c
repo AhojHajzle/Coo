@@ -4,6 +4,7 @@
 //working correctly chill
 //hleda jestli cislo je nebo neni delitelne (prvocislo)
 //TO DO poupravit komentz
+//funkcni verze bez QoL zmen
 #define cisloAno 0
 int main(){
     //zjistujeme jestli uzivatel chce hledat vsechny nebo jenom prvni delitel

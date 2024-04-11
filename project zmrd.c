@@ -68,16 +68,17 @@ int main(){
     }
     else if(setter == 2){ //orune number finder
         printf("funguju more (ne spravne)\n");
-        while(cisloOrig > 0){       //netusim co tady delam
+        while(cisloOrig > 0){       //tusim co tady delam
             int mod = cisloOrig % 10;
             printf("%d\n", mod);
 
             cisloOrig = cisloOrig / 10;
-            primeFinder += mod;
+            primeFinder += mod; //tady uz netusim co delam
             
         }
-        printf("%d\n", primeFinder);
-        if(primeFinder != cisloAno){
+        printf("%d\n", primeFinder);        //tohle mi vytiskne uplne nejaky mega random cislo (vzdycky jiny???????????????? proc???????? huh??? 1.1.1970????)
+        int dementt = primeFinder % 3;      //odsud to uz funguje takze aspon neco
+        if(dementt != cisloAno){    
             printf("je prvocislo");
         }
         else{

@@ -8,9 +8,9 @@
 int main(){
 
     int setter;
-    printf("Choose your mode (0 for first, 1 for every)  ");
+    printf("Choose your mode (0 for first, 1 for every, 2 for prime numbers)  ");
     scanf("%d", &setter);
-    if(setter > 1){                     //te vyhodi protoze jsi dement a neumis vybirat ze dvou moznosti, upravit pro vraceni na vyber novejho cislo
+    if(setter > 2){                     //te vyhodi protoze jsi dement a neumis vybirat ze dvou moznosti, upravit pro vraceni na vyber novejho cislo
         printf("kokot ses ztratil??");  
         return 1;
     }
@@ -31,12 +31,13 @@ int main(){
     int finisher = 2;
     bool finishec = false;
 
+    int primeFinder;
     
     //main code (bro fr programuje ve dvou jazycich najednou)
     //pridat goto statement, vratit se z if do while, (nee dement)
     //udelat se swtichem by bylo asi vic cool ngl
     //druha verze, nachazi pouze delitele, nedelitele ignoruje, netiskne
-    if(setter == 0){
+    if(setter == 0){    //tutaj hleda prvni delitele
         printf("%d = %d cislo -1\n\n", finish, cislo); //jenom test jestli se da takhle pocitat odpoved ano da**
     while(cisloOrig > finisher && finisher <= finish && finishec == false){ //2. sem, loopec (loopec, to by asi se melo vratit ne??)*
         cislo = cislo % finisher;       //finisher se nepricita/neopakuje, porad deli nulou :( (chyba, finisher pricital ale cislo se neresetovalo tudiz najednou aha)
@@ -45,14 +46,15 @@ int main(){
             finishec = true;
             //nalezena PRVNI delitenost delitelnost, koncime loop.
         }
-        else if(finisher == cislo - 1){     //ma vytisknout ze nema delitele protoze finisher max == cislo - 1 ale prej ne nebo to takhle nefunguje?????????????????????
-            printf("Nema delitele");        
+        else if((finisher) = cisloOrig + 1){      //ma vytisknout ze nema delitele protoze finisher max == cislo - 1 ale prej ne nebo to takhle nefunguje?????????????????????
+            printf("Nema delitele");            //max orig cislo voe demente a pak ukoncit loop
+            finishec = true;                    
         }
         finisher = finisher + step;
         cislo = cisloOrig; //nove pridane, vyresilo vsechno, nyni funguje
     }
     }
-    else if(setter == 1){
+    else if(setter == 1){   //a tutaj hleda vsechny delitele
         printf("%d = %d cislo -1\n\n", finish, cislo); //jenom test jestli se da takhle pocitat odpoved ano da**
     while(cisloOrig > finisher && finisher <= finish && finishec == false){ //2. sem, loopec (loopec, to by asi se melo vratit ne??)*
         cislo = cislo % finisher;       //finisher se nepricita/neopakuje, porad deli nulou :( (chyba, finisher pricital ale cislo se neresetovalo tudiz najednou aha)
@@ -62,7 +64,25 @@ int main(){
         }
         finisher = finisher + step;
         cislo = cisloOrig; //nove pridane, vyresilo vsechno, nyni funguje
+    }  
     }
+    else if(setter == 2){ //orune number finder
+        printf("funguju more (ne spravne)\n");
+        while(cisloOrig > 0){       //netusim co tady delam
+            int mod = cisloOrig % 10;
+            printf("%d\n", mod);
+
+            cisloOrig = cisloOrig / 10;
+            primeFinder += mod;
+            
+        }
+        printf("%d\n", primeFinder);
+        if(primeFinder != cisloAno){
+            printf("je prvocislo");
+        }
+        else{
+            printf("neni prvocislo");
+        }
     }
     
 

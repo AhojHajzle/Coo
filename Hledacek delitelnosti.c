@@ -73,7 +73,7 @@ int main(){
             printf("%d\n", mod);
 
             cisloOrig = cisloOrig / 10;
-            primeFinder += mod; //tady uz netusim co delam
+            primeFinder += mod; //tady uz netusim co delam (tusil jsem co jsem tady delal variable se jenom spatne zapisoval)
             
         }                                   //linka 34 pridal jsem "= 0" za promenou a najednou tenhle pripocet chce fungovat
         printf("%d\n", primeFinder);        //tohle mi vytiskne uplne nejaky mega random cislo (vzdycky jiny???????????????? proc???????? huh??? 1.1.1970????)

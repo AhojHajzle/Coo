@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 //learning arrays, because uhh idk but it'll be needed some day maybe
-//program gets how many items you have, puts them in an array and then adds the items together to give you the total price of your shopping
+//program gets how many items you have, puts them in an array and then adds the items together to give you the total price of your shopping list, because why not
+//extremely light weight solution for everyday needs
 int main(){
     int arrayLength = 0;
     printf("How many items are you buying?\n");

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>        //not sure why this is here?
 
 //learning arrays, because uhh idk but it'll be needed some day maybe
 //program gets how many items you have, puts them in an array and then adds the items together to give you the total price of your shopping list, because why not
